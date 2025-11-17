@@ -47,6 +47,12 @@ cc_library_shared {
     vendor: true,
 }
 
+c_library_shared {
+    name: "libgui_vendor",
+    shared_libs : ["libgui"],
+    vendor: true,
+}
+
 cc_defaults {
     name: "libgui_shim_defaults",
     shared_libs: ["libutils"],
